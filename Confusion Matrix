@@ -1,0 +1,11 @@
+import seaborn as ses
+import pandas as pd
+import matplotlib.pyplot as plt
+%matplotlib inline
+#sns.set(font_scale=2)
+
+array =  [[5,0,0,0],[0,10,0,0],[0,0,12,0],[0,0,0,14]]
+df_cm= pd.DataFrame(array,index = [i for i in 'ABCD'], columns = [i for i in 'ABCD'])
+plt.figure(figsize= (10,7))
+#sn.heatmap(df_cm, annot=True)
+df_cm
